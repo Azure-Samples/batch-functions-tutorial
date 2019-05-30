@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "input/{name}",
+      "connection": "ocrfunction_STORAGE"
+    }
+  ]
+}
