@@ -1,57 +1,11 @@
-# Project Name
+# Trigger a Batch job using Azure Functions
 
-(short, 1-3 sentenced, description of the project)
+The files in this repo are used in conjunction with our [Batch-Functions OCR tutorial](https://docs.microsoft.com/azure/batch/tutorial-batch-functions), which shows how to trigger Batch jobs based off a blob-triggered Function.
 
-## Features
+Use the following files to create your Function:
+	* `run.csx`, which is run when a new blob is added to your input blob container.
+	* `function.proj`, which lists the external libraries in your Function code, for example, the Batch .NET SDK.
 
-This project framework provides the following features:
+We've also provided `function.json`, which describes the bindings for your Function. This should be generated automatically and is given here for reference.
 
-* Feature 1
-* Feature 2
-* ...
-
-## Getting Started
-
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+Use the scanned documents available in `input_files` to test your OCR pipeline.
